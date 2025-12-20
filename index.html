@@ -42,503 +42,200 @@
 
 <body id="top">
 
-  <!-- 
-    - #HEADER
-  -->
-
   <header class="header" data-header>
     <div class="container">
 
       <a href="#" class="logo">
-        <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
-
-        <span class="span">Colete Personal Trainer</span>
+        <ion-icon name="barbell-sharp"></ion-icon>
+        <span class="span">Colete Trainer</span>
       </a>
 
       <nav class="navbar" data-navbar>
 
-        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-          <ion-icon name="close-sharp" aria-hidden="true"></ion-icon>
+        <button class="nav-close-btn" data-nav-toggler>
+          <ion-icon name="close-sharp"></ion-icon>
         </button>
 
         <ul class="navbar-list">
-
-          <li>
-            <a href="#home" class="navbar-link active" data-nav-link>Home</a>
-          </li>
-
-          <li>
-            <a href="#about" class="navbar-link" data-nav-link>About Us</a>
-          </li>
-
-          <li>
-            <a href="#class" class="navbar-link" data-nav-link>Classes</a>
-          </li>
-
-          <li>
-            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link" data-nav-link>Contact Us</a>
-          </li>
-
+          <li><a href="#home" class="navbar-link active" data-nav-link>Home</a></li>
+          <li><a href="#about" class="navbar-link" data-nav-link>About Me</a></li>
+          <li><a href="#class" class="navbar-link" data-nav-link>Plans</a></li>
+          <li><a href="#blog" class="navbar-link" data-nav-link>Blog</a></li>
+          <li><a href="#contact" class="navbar-link" data-nav-link>Contact</a></li>
         </ul>
 
       </nav>
 
       <a href="https://wa.me/34633874722?text=Hola%20estoy%20interesado%20en%20contactarte" class="btn btn-secondary"
-        target="_blank" aria-label="Contactar por WhatsApp">
+        target="_blank">
         <i class="bi bi-whatsapp fs-2"></i>
       </a>
 
-
-      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+      <button class="nav-open-btn" data-nav-toggler>
         <span class="line"></span>
         <span class="line"></span>
         <span class="line"></span>
       </button>
 
       <div class="language-switcher">
-        <img src="./assets/images/es.png" alt="Espanol" onclick="changeLanguage('es')">
-        <img src="./assets/images/en.png" alt="English" onclick="changeLanguage('en')">
+        <img src="./assets/images/es.png" alt="ES" onclick="changeLanguage('es')">
+        <img src="./assets/images/en.png" alt="EN" onclick="changeLanguage('en')">
       </div>
+
     </div>
   </header>
 
-  <main>
-    <article>
 
-      <!-- 
-        - #HERO
-      -->
+  <!-- HERO -->
+  <section class="section hero bg-dark has-after has-bg-image" id="home"
+    style="background-image: url('./assets/images/hero-bg.png')" aria-label="hero">
 
-      <section class="section hero bg-dark has-after has-bg-image" id="home" aria-label="hero" data-section
-        style="background-image: url('./assets/images/hero-bg.png')">
-        <div class="container">
+    <div class="container">
 
-          <div class="hero-content">
+      <div class="hero-content">
 
-            <p class="hero-subtitle">
-              <strong class="strong">The Best</strong>Fitness Club
-            </p>
+        <p class="hero-subtitle">
+          <strong class="strong">Transforma tu cuerpo</strong> y tu vida
+        </p>
 
-            <h1 class="h1 hero-title">Work Hard To Get Better Life</h1>
+        <h1 class="h1 hero-title">
+          Entrenamiento Personalizado para Resultados Reales
+        </h1>
 
-            <p class="section-text">
-              Duis mollis felis quis libero dictum vehicula. Duis dictum lorem mi, a faucibus nisi eleifend eu.
-            </p>
+        <p class="section-text">
+          Más fuerza. Más salud. Más confianza. Entrena conmigo y logra tu mejor versión con un programa diseñado para
+          ti.
+        </p>
 
-            <a href="#" class="btn btn-primary">Get Started</a>
+        <a href="#class" class="btn btn-primary">Empieza Hoy</a>
 
+      </div>
+
+      <div class="hero-banner">
+        <img src="./assets/images/colete-1.png" width="660" height="753" alt="Personal Trainer" class="w-100">
+
+        <img src="./assets/images/hero-circle-one.png" class="circle circle-1">
+        <img src="./assets/images/hero-circle-two.png" class="circle circle-2">
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- ABOUT -->
+  <section class="section about" id="about" aria-label="about">
+    <div class="container">
+
+      <div class="about-banner has-after">
+        <img src="./assets/images/colete-2.png" width="1320" height="1296" class="w-100" loading="lazy" alt="Trainer">
+        <img src="./assets/images/about-circle-one.png" class="circle circle-1">
+        <img src="./assets/images/about-circle-two.png" class="circle circle-2">
+        <img src="./assets/images/fitness.png" class="abs-img w-100">
+      </div>
+
+      <div class="about-content">
+
+        <p class="section-subtitle">About Me</p>
+
+        <h2 class="h2 section-title">My History</h2>
+
+        <p class="section-text">
+          Soy Colete, entrenador personal con años de experiencia ayudando a personas a ganar fuerza, perder grasa y
+          mejorar
+          su salud física y mental. Mi enfoque se basa en disciplina, técnica y acompañamiento constante.
+        </p>
+
+        <p class="section-text">
+          Entrenamientos adaptados a tu nivel, objetivos claros y evolución semana a semana.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- PRICES -->
+  <section class="section class bg-dark has-bg-image" id="class"
+    style="background-image: url('./assets/images/classes-bg.png')" aria-label="class">
+
+    <div class="container">
+
+      <p class="section-subtitle">Train With Me</p>
+
+      <h2 class="h2 section-title text-center">My Prices</h2>
+
+
+      <div class="pricing-container">
+
+        <div class="pricing-card">
+          <div class="card-header">
+            <h3 class="card-title">1 SESSION</h3>
+            <span class="price">$70</span>
           </div>
-
-          <div class="hero-banner">
-
-            <img src="./assets/images/colete-1.png" width="660" height="753" alt="hero banner" class="w-100">
-
-            <img src="./assets/images/hero-circle-one.png" width="666" height="666" aria-hidden="true" alt=""
-              class="circle circle-1">
-            <img src="./assets/images/hero-circle-two.png" width="666" height="666" aria-hidden="true" alt=""
-              class="circle circle-2">
-
-            <!-- <img src="./assets/images/heart-rate.svg" width="255" height="270" alt="heart rate"
-              class="abs-img abs-img-1">
-            <img src="./assets/images/calories.svg" width="348" height="224" alt="calories" class="abs-img abs-img-2"> -->
-
+          <div class="card-body">
+            Entrenamiento 1 a 1 totalmente personalizado.
+            <span class="badge">Gym o exterior</span>
           </div>
-
+          <a href="#" class="btn">Reservar</a>
         </div>
-      </section>
 
-
-      <!-- 
-        - #ABOUT
-      -->
-
-      <section class="section about" id="about" aria-label="about">
-        <div class="container">
-
-          <div class="about-banner has-after">
-             <!-- width="660" height="648" -->
-            <img src="./assets/images/colete-2.png" width="1320" height="1296" loading="lazy" alt="about banner"
-              class="w-100">
-
-            <img src="./assets/images/about-circle-one.png" width="660" height="534" loading="lazy" aria-hidden="true"
-              alt="" class="circle circle-1">
-            <img src="./assets/images/about-circle-two.png" width="660" height="534" loading="lazy" aria-hidden="true"
-              alt="" class="circle circle-2">
-
-            <img src="./assets/images/fitness.png" width="650" height="154" loading="lazy" alt="fitness"
-              class="abs-img w-100">
+        <div class="pricing-card">
+          <div class="card-header">
+            <h3 class="card-title">2 SESSIONS / WEEK</h3>
+            <span class="price">$240</span>
           </div>
-
-          <div class="about-content">
-
-            <p class="section-subtitle">About Me</p>
-
-            <h2 class="h2 section-title">My history</h2>
-
-            <p class="section-text">
-              Soy colete .... 
-            </p>
-<!-- 
-            <p class="section-text">
-              Integer placerat vitae metus posuere tincidunt. Nullam suscipit ante ac aliquet viverra vestibulum ante
-              ipsum primis.
-            </p> -->
-
-            <div class="wrapper">
-
-              <div class="about-coach">
-
-                <!-- <figure class="coach-avatar">
-                  <img src="./assets/images/colete-2.png" width="65" height="65" loading="lazy" alt="Trainer">
-                </figure>
-
-                <div>
-                  <h3 class="h3 coach-name">Denis Robinson</h3>
-
-                  <p class="coach-title">Our Coach</p>
-                </div>
-
-              </div> -->
-
-              <!-- <a href="#" class="btn btn-primary">Explore More</a> -->
-
-            </div>
-
+          <div class="card-body">
+            Ideal para progreso constante.
+            <span class="badge">Pago quincenal</span>
           </div>
-
+          <a href="#" class="btn">Elegir Plan</a>
         </div>
-      </section>
 
-
-
-
-
-      <!-- 
-        - #VIDEO
-      -->
-
-      <!-- <section class="section video" aria-label="video">
-        <div class="container">
-
-          <div class="video-card has-before has-bg-image"
-            style="background-image: url('./assets/images/video-banner.jpg')">
-
-            <h2 class="h2 card-title">Explore Fitness Life</h2>
-
-            <button class="play-btn" aria-label="play video">
-              <ion-icon name="play-sharp" aria-hidden="true"></ion-icon>
-            </button>
-
-            <a href="#" class="btn-link has-before">Watch More</a>
-
+        <div class="pricing-card">
+          <div class="card-header">
+            <h3 class="card-title">3 SESSIONS / WEEK</h3>
+            <span class="price">$330</span>
           </div>
-
+          <div class="card-body">
+            Transformación total.
+            <span class="badge">Plan recomendado</span>
+          </div>
+          <a href="#" class="btn">Elegir Plan</a>
         </div>
-      </section> -->
 
-
-
-
-
-      <!-- 
-        - #CLASS
-      -->
-
-      <section class="section class bg-dark has-bg-image" id="class" aria-label="class"
-        style="background-image: url('./assets/images/classes-bg.png')">
-        <div class="container">
-
-          <p class="section-subtitle">Our Classes</p>
-
-          <h2 class="h2 section-title text-center">My prices</h2>
-
-          <ul class="class-list has-scrollbar">
-
-            <li class="scrollbar-item">
-              <div class="class-card">
-<!-- 
-                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
-                  <img src="./assets/images/class-1.jpg" width="416" height="240" loading="lazy" alt="Weight Lifting"
-                    class="img-cover">
-                </figure> -->
-
-                <div class="card-content">
-
-                  <div class="title-wrapper">
-                    <img src="./assets/images/class-icon-1.png" width="52" height="52" aria-hidden="true" alt=""
-                      class="title-icon">
-
-                    <h3 class="h3">
-                      <a href="#" class="card-title">1  SESSION 70 $</a>
-                    </h3>
-                  </div>
-
-                  <p class="card-text">
-                    Suspendisse nisi libero, cursus ac magna sit amet, fermentum imperdiet nisi.
-                  </p>
-
-                  <!-- <div class="card-progress">
-
-                    <div class="progress-wrapper">
-                      <p class="progress-label">Class Full</p>
-
-                      <span class="progress-value">85%</span>
-                    </div>
-
-                    <div class="progress-bg">
-                      <div class="progress-bar" style="width: 85%"></div>
-                    </div>
-
-                  </div> -->
-
-                </div>
-
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="class-card">
-
-                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
-                  <img src="./assets/images/class-2.jpg" width="416" height="240" loading="lazy" alt="Cardio & Strenght"
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="title-wrapper">
-                    <img src="./assets/images/class-icon-2.png" width="52" height="52" aria-hidden="true" alt=""
-                      class="title-icon">
-
-                    <h3 class="h3">
-                      <a href="#" class="card-title">Cardio & Strenght</a>
-                    </h3>
-                  </div>
-
-                  <p class="card-text">
-                    Suspendisse nisi libero, cursus ac magna sit amet, fermentum imperdiet nisi.
-                  </p>
-
-                  <div class="card-progress">
-
-                    <div class="progress-wrapper">
-                      <p class="progress-label">Class Full</p>
-
-                      <span class="progress-value">70%</span>
-                    </div>
-
-                    <div class="progress-bg">
-                      <div class="progress-bar" style="width: 70%"></div>
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="class-card">
-
-                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
-                  <img src="./assets/images/class-3.jpg" width="416" height="240" loading="lazy" alt="Power Yoga"
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="title-wrapper">
-                    <img src="./assets/images/class-icon-3.png" width="52" height="52" aria-hidden="true" alt=""
-                      class="title-icon">
-
-                    <h3 class="h3">
-                      <a href="#" class="card-title">Power Yoga</a>
-                    </h3>
-                  </div>
-
-                  <p class="card-text">
-                    Suspendisse nisi libero, cursus ac magna sit amet, fermentum imperdiet nisi.
-                  </p>
-
-                  <div class="card-progress">
-
-                    <div class="progress-wrapper">
-                      <p class="progress-label">Class Full</p>
-
-                      <span class="progress-value">90%</span>
-                    </div>
-
-                    <div class="progress-bg">
-                      <div class="progress-bar" style="width: 90%"></div>
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="class-card">
-
-                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
-                  <img src="./assets/images/class-4.jpg" width="416" height="240" loading="lazy" alt="The Fitness Pack"
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="title-wrapper">
-                    <img src="./assets/images/class-icon-4.png" width="52" height="52" aria-hidden="true" alt=""
-                      class="title-icon">
-
-                    <h3 class="h3">
-                      <a href="#" class="card-title">The Fitness Pack</a>
-                    </h3>
-                  </div>
-
-                  <p class="card-text">
-                    Suspendisse nisi libero, cursus ac magna sit amet, fermentum imperdiet nisi.
-                  </p>
-
-                  <div class="card-progress">
-
-                    <div class="progress-wrapper">
-                      <p class="progress-label">Class Full</p>
-
-                      <span class="progress-value">60%</span>
-                    </div>
-
-                    <div class="progress-bg">
-                      <div class="progress-bar" style="width: 60%"></div>
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
+        <div class="pricing-card">
+          <div class="card-header">
+            <h3 class="card-title">ONLINE COACHING</h3>
+            <span class="price">$250</span>
+          </div>
+          <div class="card-body">
+            ✔ Plan personalizado<br>
+            ✔ Seguimiento semanal
+            <span class="badge">Entrena desde cualquier lugar</span>
+          </div>
+          <a href="#" class="btn">Unirme</a>
         </div>
-      </section>
 
-
-
-
-
-      <!-- 
-        - #BLOG
-      -->
-
-      <section class="section blog" id="blog" aria-label="blog">
-        <div class="container">
-
-          <p class="section-subtitle">Our News</p>
-
-          <h2 class="h2 section-title text-center">Latest Blog Feed</h2>
-
-          <ul class="blog-list has-scrollbar">
-
-            <li class="scrollbar-item">
-              <div class="blog-card">
-
-                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
-                  <img src="./assets/images/blog-1.jpg" width="440" height="270" loading="lazy"
-                    alt="Going to the gym for the first time" class="img-cover">
-
-                  <time class="card-meta" datetime="2022-07-07">7 July 2022</time>
-                </div>
-
-                <div class="card-content">
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Going to the gym for the first time</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In hac
-                    habitasse platea dictumst.
-                  </p>
-
-                  <a href="#" class="btn-link has-before">Read More</a>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="blog-card">
-
-                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
-                  <img src="./assets/images/blog-2.jpg" width="440" height="270" loading="lazy"
-                    alt="Parturient accumsan cacus pulvinar magna" class="img-cover">
-
-                  <time class="card-meta" datetime="2022-07-07">7 July 2022</time>
-                </div>
-
-                <div class="card-content">
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Parturient accumsan cacus pulvinar magna</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In hac
-                    habitasse platea dictumst.
-                  </p>
-
-                  <a href="#" class="btn-link has-before">Read More</a>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="blog-card">
-
-                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
-                  <img src="./assets/images/blog-3.jpg" width="440" height="270" loading="lazy"
-                    alt="Risus purus namien parturient accumsan cacus" class="img-cover">
-
-                  <time class="card-meta" datetime="2022-07-07">7 July 2022</time>
-                </div>
-
-                <div class="card-content">
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Risus purus namien parturient accumsan cacus</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In hac
-                    habitasse platea dictumst.
-                  </p>
-
-                  <a href="#" class="btn-link has-before">Read More</a>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
+        <div class="pricing-card">
+          <div class="card-header">
+            <h3 class="card-title">AT HOME SESSION</h3>
+            <span class="price">$80</span>
+          </div>
+          <div class="card-body">
+            Entrenamiento en tu edificio o domicilio.
+            <span class="badge">Comodidad total</span>
+          </div>
+          <a href="#" class="btn">Agendar</a>
         </div>
-      </section>
 
-    </article>
-  </main>
+      </div>
+
+    </div>
+  </section>
+
 
 
 
