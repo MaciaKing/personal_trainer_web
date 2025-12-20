@@ -559,7 +559,7 @@ body {
   40% { transform: translateY(-15px); }
 }
 
-.about .section-text:not(:last-of-type) { margin-block-end: 15px; }
+.about .section-text:not(:last-of-type) { margin-block-end: 0px; }
 
 .about .wrapper { margin-block-start: 30px; }
 
@@ -567,7 +567,7 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
-  margin-block-end: 30px;
+  margin-block-end: 0px;
 }
 
 .about .coach-avatar {
@@ -595,7 +595,7 @@ body {
 /*-----------------------------------*\
   #VIDEO
 \*-----------------------------------*/
-
+/* 
 .video {
   padding-block: 0;
   margin-block-end: -250px;
@@ -642,7 +642,7 @@ body {
 @keyframes pulse {
   0% { box-shadow: 0 0 0 0 var(--coquelicot); }
   100% { box-shadow: 0 0 0 40px transparent; }
-}
+} */
 
 
 
@@ -1605,4 +1605,51 @@ body {
   .pricing-card{
     padding:20px;
   }
+}
+
+/* Alinear header */
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* WhatsApp Verde */
+.btn-whatsapp {
+  background: #25D366;
+  color: #fff;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+}
+
+.btn-whatsapp:hover {
+  background: #1ebe57;
+  transform: scale(1.1);
+}
+
+/* FLAGS */
+.lang-item img {
+  width: 28px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.lang-item img:hover {
+  transform: scale(1.1);
+}
+
+
+.hide-link {
+  display: none;
+}
+
+
+#class.section {
+  padding-top: 50px;
+  margin-top: -40px;  /* si quieres subirla aún más, ajusta aquí */
 }

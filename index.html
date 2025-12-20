@@ -42,48 +42,60 @@
 
 <body id="top">
 
-  <header class="header" data-header>
-    <div class="container">
+<header class="header" data-header>
+  <div class="container">
 
-      <a href="#" class="logo">
-        <ion-icon name="barbell-sharp"></ion-icon>
-        <span class="span">Colete Trainer</span>
-      </a>
+    <!-- LOGO -->
+    <a href="#" class="logo">
+      <ion-icon name="barbell-sharp"></ion-icon>
+      <span class="span">Colete Trainer</span>
+    </a>
 
-      <nav class="navbar" data-navbar>
 
-        <button class="nav-close-btn" data-nav-toggler>
-          <ion-icon name="close-sharp"></ion-icon>
-        </button>
+    <!-- NAV -->
+    <nav class="navbar" data-navbar>
 
-        <ul class="navbar-list">
-          <li><a href="#home" class="navbar-link active" data-nav-link>Home</a></li>
-          <li><a href="#about" class="navbar-link" data-nav-link>About Me</a></li>
-          <li><a href="#class" class="navbar-link" data-nav-link>Plans</a></li>
-          <li><a href="#blog" class="navbar-link" data-nav-link>Blog</a></li>
-          <li><a href="#contact" class="navbar-link" data-nav-link>Contact</a></li>
-        </ul>
-
-      </nav>
-
-      <a href="https://wa.me/34633874722?text=Hola%20estoy%20interesado%20en%20contactarte" class="btn btn-secondary"
-        target="_blank">
-        <i class="bi bi-whatsapp fs-2"></i>
-      </a>
-
-      <button class="nav-open-btn" data-nav-toggler>
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
+      <button class="nav-close-btn" data-nav-toggler>
+        <ion-icon name="close-sharp"></ion-icon>
       </button>
 
-      <div class="language-switcher">
-        <img src="./assets/images/es.png" alt="ES" onclick="changeLanguage('es')">
-        <img src="./assets/images/en.png" alt="EN" onclick="changeLanguage('en')">
-      </div>
+      <ul class="navbar-list">
 
-    </div>
-  </header>
+        <li><a href="#about" class="navbar-link" data-nav-link>About Me</a></li>
+        <li><a href="#class" class="navbar-link" data-nav-link>Plans</a></li>
+        <li><a href="#blog" class="navbar-link" data-nav-link>Blog</a></li>
+        <li><a href="#contact" class="navbar-link" data-nav-link>Contact</a></li>
+
+        <!-- LANG FLAGS -->
+        <li class="lang-item">
+          <img src="./assets/images/es.png" alt="ES" onclick="changeLanguage('es')">
+        </li>
+        <li class="lang-item">
+          <img src="./assets/images/en.png" alt="EN" onclick="changeLanguage('en')">
+        </li>
+
+      </ul>
+
+    </nav>
+
+
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/34633874722?text=Hola%20estoy%20interesado%20en%20contactarte"
+       class="btn btn-whatsapp" target="_blank">
+      <i class="bi bi-whatsapp fs-2"></i>
+    </a>
+
+
+    <!-- HAMBURGER -->
+    <button class="nav-open-btn" data-nav-toggler>
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </button>
+
+  </div>
+</header>
+
 
 
   <!-- HERO -->
@@ -94,20 +106,14 @@
 
       <div class="hero-content">
 
-        <p class="hero-subtitle">
-          <strong class="strong">Transforma tu cuerpo</strong> y tu vida
-        </p>
-
-        <h1 class="h1 hero-title">
+        <h1 class="h1 hero-title" data-i18n="hero_title">
           Entrenamiento Personalizado para Resultados Reales
         </h1>
 
-        <p class="section-text">
+        <p class="section-text" data-i18n="section_text">
           Más fuerza. Más salud. Más confianza. Entrena conmigo y logra tu mejor versión con un programa diseñado para
           ti.
         </p>
-
-        <a href="#class" class="btn btn-primary">Empieza Hoy</a>
 
       </div>
 
@@ -159,7 +165,7 @@
 
   <!-- PRICES -->
   <section class="section class bg-dark has-bg-image" id="class"
-    style="background-image: url('./assets/images/classes-bg.png')" aria-label="class">
+    style="background-image: url('./assets/images/classes-bg.png')" aria-label="class" >
 
     <div class="container">
 
