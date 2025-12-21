@@ -142,3 +142,13 @@ document.addEventListener("DOMContentLoaded", () => {
   changeLanguage(saved);
 });
 
+
+window.addEventListener("scroll", function () {
+  const logo = document.getElementById("logo");
+
+  if (window.scrollY > 50) {
+    logo.src = "./assets/images/colete-logo.png"; // negro
+  } else {
+    logo.src = "./assets/images/colete-logo-blanco.png"; // blanco
+  }
+});
