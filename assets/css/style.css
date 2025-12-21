@@ -1964,3 +1964,8 @@ body {
   }
 }
 
+.about-banner img.w-100:first-child{
+  width: 40%;        /* 🔥 hazla más pequeña */
+  margin: 0 auto;    /* centrada */
+  display: block;
+}
