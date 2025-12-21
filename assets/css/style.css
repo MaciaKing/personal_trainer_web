@@ -1793,3 +1793,41 @@ body {
 }
 
 
+.pricing-container{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* GOLD BAR */
+.price-row{
+  background: linear-gradient(135deg, #FFE499 0%, #E7AA51 45%, #AC7031 100%);
+  border-radius: 18px;
+  padding: 14px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 900;
+  width: 50%;
+}
+
+/* Left text */
+.price-row .label{
+  font-size: 1.05rem;
+  color:#000;
+}
+
+.price-row small{
+  display:block;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Right price */
+.price-row .amount{
+  font-size: 1.9rem;
+  color:#000;
+  font-weight: 900;
+}
+
+
