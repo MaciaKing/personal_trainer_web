@@ -1813,21 +1813,154 @@ body {
 
 /* Left text */
 .price-row .label{
-  font-size: 1.05rem;
+  font-size: 1.35rem;   /* antes 1.05rem */
   color:#000;
+  font-weight: 900;
+  letter-spacing: .5px;
 }
 
 .price-row small{
   display:block;
-  font-size: 0.8rem;
-  font-weight: 600;
+  font-size: 1rem;      /* antes 0.8rem */
+  font-weight: 700;
 }
 
 /* Right price */
 .price-row .amount{
-  font-size: 1.9rem;
+  font-size: 2.4rem;    /* antes 1.9rem */
   color:#000;
   font-weight: 900;
 }
 
+.with-colete {
+  position: relative;
+}
+
+.with-colete::after {
+  content: "";
+  position: absolute;
+  right: 180px;
+  bottom: 0;
+  width: 550px;
+  height: 110%;
+  background-image: url("../images/colete-3.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+  pointer-events: none;
+}
+
+.with-colete.section {
+  padding-top: 30px;   /* antes 80 + ajustes extras */
+}
+
+/* ====== PRICING RESPONSIVE ====== */
+
+.pricing-container{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+/* GOLD BAR */
+.price-row{
+  background: linear-gradient(135deg, #FFE499 0%, #E7AA51 45%, #AC7031 100%);
+  border-radius: 18px;
+  padding: 16px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 900;
+  width: 50%;
+}
+
+/* Left text */
+.price-row .label{
+  font-size: 1.35rem;
+  color:#000;
+  font-weight: 900;
+  letter-spacing: .5px;
+}
+
+.price-row small{
+  display:block;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* Right price */
+.price-row .amount{
+  font-size: 2.4rem;
+  color:#000;
+  font-weight: 900;
+}
+
+
+/* ========= TABLET ========= */
+@media (max-width: 992px){
+  .price-row{
+    width: 70%;
+  }
+}
+
+
+/* ========= MOBILE ========= */
+@media (max-width: 768px){
+
+  .pricing-container{
+    align-items: center;
+  }
+
+  .price-row{
+    width: 100%;
+  }
+
+  .price-row .label{
+    font-size: 1.1rem;
+  }
+
+  .price-row small{
+    font-size: 0.9rem;
+  }
+
+  .price-row .amount{
+    font-size: 1.9rem;
+  }
+}
+
+/* ===== MOBILE: COLETE BACKGROUND ===== */
+/* ===== MOBILE: COLETE MÁS GRANDE ===== */
+@media (max-width: 768px){
+
+  .with-colete {
+    position: relative;
+  }
+
+  .with-colete::after{
+    right: 50%;
+    bottom: 10px;
+    transform: translateX(50%);
+
+    /* 🔥 AUMENTAMOS TAMAÑO AQUÍ */
+    width: 650px;     /* antes 450px */
+    height: 650px;    /* antes 450px */
+
+    background-position: center bottom;
+    background-size: contain;
+
+    z-index: 0;
+    opacity: .28;     /* puedes subirlo o bajarlo si quieres */
+  }
+
+  #prices .container{
+    position: relative;
+    z-index: 2;
+  }
+
+  .pricing-container{
+    position: relative;
+    z-index: 3;
+  }
+}
 
