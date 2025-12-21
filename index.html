@@ -42,59 +42,61 @@
 
 <body id="top">
 
-<header class="header" data-header>
-  <div class="container">
+  <header class="header" data-header>
+    <div class="container">
 
-    <!-- LOGO -->
-    <a href="#" class="logo">
-      <ion-icon name="barbell-sharp"></ion-icon>
-      <span class="span">Colete Fitness</span>
-    </a>
+      <!-- LOGO -->
+      <a href="#" class="logo">
+        <!-- <ion-icon name="barbell-sharp"></ion-icon> -->
+        <img src="./assets/images/colete-logo.png" alt="Colete Logo" aria-hidden="true"
+          style="width: 50px; height: auto;">
 
-
-    <!-- NAV -->
-    <nav class="navbar" data-navbar>
-
-      <button class="nav-close-btn" data-nav-toggler>
-        <ion-icon name="close-sharp"></ion-icon>
-      </button>
-
-      <ul class="navbar-list">
-
-        <li><a href="#about" class="navbar-link" data-nav-link>About Me</a></li>
-        <li><a href="#class" class="navbar-link" data-nav-link>Plans</a></li>
-        <li><a href="#blog" class="navbar-link" data-nav-link>Blog</a></li>
-        <li><a href="#contact" class="navbar-link" data-nav-link>Contact</a></li>
-
-        <!-- LANG FLAGS -->
-        <li class="lang-item">
-          <img src="./assets/images/es.png" alt="ES" onclick="changeLanguage('es')">
-        </li>
-        <li class="lang-item">
-          <img src="./assets/images/en.png" alt="EN" onclick="changeLanguage('en')">
-        </li>
-
-      </ul>
-
-    </nav>
+        <span class="span">Colete Fitness</span>
+      </a>
 
 
-    <!-- WHATSAPP -->
-    <a href="https://wa.me/34633874722?text=Hola%20estoy%20interesado%20en%20contactarte"
+      <!-- NAV -->
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" data-nav-toggler>
+          <ion-icon name="close-sharp"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+
+          <li><a href="#about" class="navbar-link" data-nav-link>About Me</a></li>
+          <li><a href="#class" class="navbar-link" data-nav-link>Prices</a></li>
+          <li><a href="#contact" class="navbar-link" data-nav-link>Contact</a></li>
+
+          <!-- LANG FLAGS -->
+          <li class="lang-item">
+            <img src="./assets/images/es.png" alt="ES" onclick="changeLanguage('es')">
+          </li>
+          <li class="lang-item">
+            <img src="./assets/images/en.png" alt="EN" onclick="changeLanguage('en')">
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+      <!-- WHATSAPP -->
+      <!-- <a href="https://wa.me/34633874722?text=Hola%20estoy%20interesado%20en%20contactarte"
        class="btn btn-whatsapp" target="_blank">
       <i class="bi bi-whatsapp fs-2"></i>
-    </a>
+    </a> -->
 
 
-    <!-- HAMBURGER -->
-    <button class="nav-open-btn" data-nav-toggler>
-      <span class="line"></span>
-      <span class="line"></span>
-      <span class="line"></span>
-    </button>
+      <!-- HAMBURGER -->
+      <button class="nav-open-btn" data-nav-toggler>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
 
-  </div>
-</header>
+    </div>
+  </header>
 
 
 
@@ -165,7 +167,7 @@
 
   <!-- PRICES -->
   <section class="section class bg-dark has-bg-image" id="class"
-    style="background-image: url('./assets/images/classes-bg.png')" aria-label="class" >
+    style="background-image: url('./assets/images/classes-bg.png')" aria-label="class">
 
     <div class="container">
 
@@ -244,6 +246,45 @@
 
 
 
+  <!-- CONTACT -->
+  <section class="section contact has-bg-image" id="contact" style="background-color: #ffffff;" aria-label="contact">
+
+    <div class="container">
+
+      <h2 class="h2 section-title text-center">Contact</h2>
+
+      <div class="pricing-container">
+
+        <!-- Contacto Gmail -->
+        <div class="pricing-card">
+          <div class="card-header">
+            <h3 class="card-title">Email</h3>
+            <span class="price">Gmail</span>
+          </div>
+          <div class="card-body">
+            Envíame un correo y coordinamos tu plan de entrenamiento.
+            <span class="badge">Respuesta rápida</span>
+          </div>
+          <a href="mailto:tucorreo@gmail.com" class="btn">Enviar Email</a>
+        </div>
+
+        <!-- Contacto WhatsApp -->
+        <div class="pricing-card">
+          <div class="card-header">
+            <h3 class="card-title">WhatsApp</h3>
+            <span class="price">Chat</span>
+          </div>
+          <div class="card-body">
+            Escríbeme directamente por WhatsApp para más información.
+            <span class="badge">Atención directa</span>
+          </div>
+          <a href="https://wa.me/1234567890" target="_blank" class="btn">Enviar WhatsApp</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
 
 
 
@@ -260,7 +301,6 @@
 
           <a href="#" class="logo">
             <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
-
             <span class="span">Fitlife</span>
           </a>
 
