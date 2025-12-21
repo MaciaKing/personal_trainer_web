@@ -1965,7 +1965,46 @@ body {
 }
 
 .about-banner img.w-100:first-child{
-  width: 40%;        /* 🔥 hazla más pequeña */
-  margin: 0 auto;    /* centrada */
+  width: 40%;
+  margin: 0 auto;
   display: block;
+}
+
+/* 📌 HERO IMAGE */
+.hero-banner img{
+  width: 85%;          
+  max-width: 520px;    /* límite para pantallas grandes */
+  margin: 0 auto;
+  display: block;
+}
+
+/* 📱 Tablet */
+@media (max-width: 992px){
+  .hero-banner img{
+    width: 80%;
+    max-width: 450px;
+  }
+}
+
+/* 📱📱 Mobile */
+@media (max-width: 768px){
+  .hero-banner img{
+    width: 90%;        /* un poco más grande para móvil */
+    max-width: 380px;
+  }
+}
+
+.hero{
+  padding-block-start: 60px;   /* antes era mucho más */
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img{
+  width: 80px;  
+  height: auto;
 }
