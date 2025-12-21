@@ -1767,3 +1767,29 @@ body {
 .hero {
   padding-block-start: calc(var(--section-padding) + 5px);
 }
+
+.about-instagram {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  grid-column: 1 / -1;
+}
+
+/* 🔥 Tamaño reducido */
+.about-instagram .instagram-media {
+  max-width: 700px !important;   /* ← hazlo más pequeño cambiando este número */
+  width: 100% !important;
+  margin: 0 auto !important;
+  transform: scale(0.95);        /* opcional: encoge un poco */
+  transform-origin: center;
+}
+
+/* ❌ Sin bordes ni sombras */
+.about-instagram blockquote.instagram-media {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+
