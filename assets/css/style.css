@@ -2008,3 +2008,42 @@ body {
   width: 80px;  
   height: auto;
 }
+
+
+@media (max-width: 1350px){
+
+  .with-colete {
+    position: relative;
+  }
+
+  .with-colete::after{
+    right: 50%;
+    bottom: 10px;
+    transform: translateX(50%);
+    width: 650px;
+    height: 650px;
+    background-position: center bottom;
+    background-size: contain;
+    z-index: 0;
+    opacity: .28;
+  }
+
+  #prices .container{
+    position: relative;
+    z-index: 2;
+  }
+
+  .pricing-container{
+    position: relative;
+    z-index: 3;
+  }
+
+
+  .pricing-container{
+    align-items: center;
+  }
+
+  .price-row{
+    width: 50%;
+  }
+}
