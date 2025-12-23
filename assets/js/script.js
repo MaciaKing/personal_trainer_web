@@ -58,34 +58,14 @@ const translations = {
     hero_subtitle: "Fuerza, ganancia muscular y pérdida de grasa con un entrenamiento adaptado a ti.",
     hero_title: "Entrenamiento personal. Resultados reales.",
 
-    // nav_home: "Home",
     nav_about: "Sobre mí",
     nav_prices: "Precios",
     nav_contact: "Contacto",
     nav_review: "Review",
 
-    // prices_title: "Mis Precios",
-    // train_with_me: "Entrena conmigo",
-
-    // plan1_title: "1 SESIÓN",
-    // plan1_desc: "Entrenamiento 1 a 1 totalmente personalizado.",
-    // plan1_badge: "Gym o exterior",
-
-    // plan2_title: "2 SESIONES / SEMANA",
-    // plan2_desc: "Ideal para progreso constante.",
-    // plan2_badge: "Pago quincenal",
-
-    // plan3_title: "3 SESIONES / SEMANA",
-    // plan3_desc: "Transformación total.",
-    // plan3_badge: "Plan recomendado",
-
-    // online_title: "ONLINE COACHING",
-    // online_desc: "Plan personalizado + seguimiento semanal",
-    // online_badge: "Entrena desde cualquier lugar",
-
-    // home_title: "ENTRENAMIENTO EN CASA",
-    // home_desc: "Entrenamiento en tu edificio o domicilio.",
-    // home_badge: "Comodidad total"
+    about_me_title: "Sobre mí",
+    about_me_subtitle: "Mi Historia",
+    about_me_text: "Soy entrenador personal con más de 10 años de experiencia, especializado en fuerza, desarrollo físico y entrenamiento seguro y eficaz.<br>Trabajo con personas que buscan progresar de verdad, sin atajos. Cada programa se adapta a tus objetivos, nivel y estilo de vida.<br>Ofrezco entrenamiento presencial, a domicilio y online, con un enfoque claro en la técnica correcta, la progresión y resultados sostenibles. ",
   },
 
   en: {
@@ -98,28 +78,9 @@ const translations = {
     nav_contact: "Contact",
     nav_review: "Reviews",
 
-    // prices_title: "My Prices",
-    // train_with_me: "Train With Me",
-
-    // plan1_title: "1 SESSION",
-    // plan1_desc: "Fully personalized 1-on-1 training.",
-    // plan1_badge: "Gym or outdoor",
-
-    // plan2_title: "2 SESSIONS / WEEK",
-    // plan2_desc: "Perfect for steady progress.",
-    // plan2_badge: "Bi-weekly payment",
-
-    // plan3_title: "3 SESSIONS / WEEK",
-    // plan3_desc: "Total body transformation.",
-    // plan3_badge: "Recommended plan",
-
-    // online_title: "ONLINE COACHING",
-    // online_desc: "Custom plan + weekly follow-up",
-    // online_badge: "Train from anywhere",
-
-    // home_title: "AT HOME SESSION",
-    // home_desc: "Training at your building or home.",
-    // home_badge: "Total convenience"
+    about_me_title: "About me",
+    about_me_subtitle: "My History",
+    about_me_text: "I\’m a personal trainer with over 10 years of experience, focused on strength, physique development and safe, effective training.<br> I work with people who want real progress, not shortcuts. Every program is adapted to your goals, experience and lifestyle.<br> I offer 1-on-1 coaching in person, at home and online, with a clear focus on proper technique, progression and long-term results.",
   }
 };
 
