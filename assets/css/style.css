@@ -2413,3 +2413,53 @@ body {
     text-align: center;
   }
 }
+
+.footer-contact {
+  margin-top: 1rem;
+}
+
+.footer-contact .contact-row {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;         /* Permite que baje a otra línea si no cabe */
+  justify-content: center; /* Centrado */
+  align-items: center;
+  text-align: center;
+}
+
+.footer-contact p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.footer-contact a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive más pequeño */
+@media (max-width: 600px) {
+  .footer-contact .contact-row {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+}
+
+/* Menos distancia entre los footer-links y la sección de contacto */
+.footer-links {
+  margin-bottom: 0.5rem;  /* antes quizá era más grande */
+}
+
+/* Más distancia debajo del contacto y antes del copyright */
+.footer-contact {
+  margin-bottom: 2rem;
+}
+
+/* O directamente dar más espacio solo al copyright */
+.footer .copyright {
+  margin-top: 2rem;
+}
