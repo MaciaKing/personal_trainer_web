@@ -66,6 +66,15 @@ const translations = {
     about_me_title: "Sobre mí",
     about_me_subtitle: "Mi Historia",
     about_me_text: "Soy entrenador personal con más de 10 años de experiencia, especializado en fuerza, desarrollo físico y entrenamiento seguro y eficaz.<br>Trabajo con personas que buscan progresar de verdad, sin atajos. Cada programa se adapta a tus objetivos, nivel y estilo de vida.<br>Ofrezco entrenamiento presencial, a domicilio y online, con un enfoque claro en la técnica correcta, la progresión y resultados sostenibles. ",
+
+    train_title: "Entrena conmigo",
+    train_subtitle: "Mis precios",
+    first_card: "1 Sesión",
+    second_card: "2 Sesiones / semana <small>Pago quincenal</small>",
+    third_card: "3 Sesiones / semana <small>Pago quincenal</small>",
+    fourth_card: "Seguimiento online <small>Rutina personalizada + Seguimiento semanal</small>",
+    five_card: "Sesión a domicilio <small>Entrena en el gimnasio de tu edificio</small>",
+
   },
 
   en: {
@@ -81,6 +90,16 @@ const translations = {
     about_me_title: "About me",
     about_me_subtitle: "My History",
     about_me_text: "I\’m a personal trainer with over 10 years of experience, focused on strength, physique development and safe, effective training.<br> I work with people who want real progress, not shortcuts. Every program is adapted to your goals, experience and lifestyle.<br> I offer 1-on-1 coaching in person, at home and online, with a clear focus on proper technique, progression and long-term results.",
+
+    train_title: "Train with me",
+    train_subtitle: "My prices",
+
+    first_card: "1 Session",
+    second_card: "2 Sessions per week <small>Biweekly payment</small>",
+    third_card: "3 Sessions per week <small>Biweekly payment</small>",
+    fourth_card: "Online tracking <small>Personalized routine + Weekly follow-up</small>",
+    five_card: "Home session <small>Work out at your building's gym</small>",
+
   }
 };
 
