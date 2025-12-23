@@ -55,8 +55,8 @@ window.addEventListener("scroll", function () {
 
 const translations = {
   es: {
-    hero_subtitle: "Transforma tu cuerpo y tu vida",
-    hero_title: "Entrenamiento personalizado para resultados reales",
+    hero_subtitle: "Fuerza, ganancia muscular y pérdida de grasa con un entrenamiento adaptado a ti.",
+    hero_title: "Entrenamiento personal. Resultados reales.",
     section_text: "Más fuerza. Más salud. Más confianza. Entrena conmigo y logra tu mejor versión con un programa diseñado para ti.",
     cta_btn: "Empieza Hoy",
 
@@ -91,8 +91,8 @@ const translations = {
   },
 
   en: {
-    hero_subtitle: "Transform your body and your life",
-    hero_title: "Personalized training for REAL RESULTS",
+    hero_subtitle: "Strength, muscle and fat loss through personalized training adapted to you.",
+    hero_title: "Personal training. Real Results.",
     section_text: "More strength. More health. More confidence. Train with me and become your best self with a program designed just for you.",
     cta_btn: "Start Today",
 
