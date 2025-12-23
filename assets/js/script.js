@@ -75,6 +75,12 @@ const translations = {
     fourth_card: "Seguimiento online <small>Rutina personalizada + Seguimiento semanal</small>",
     five_card: "Sesión a domicilio <small>Entrena en el gimnasio de tu edificio</small>",
 
+    contact_title: "Contacto",
+    send_email: "Enviar",
+    your_name: "Tu nombre",
+    your_email: "Tu correo",
+    your_message: "Tu mensaje",
+    send_whatsapp: "Contactar por Whatsapp",
   },
 
   en: {
@@ -100,17 +106,32 @@ const translations = {
     fourth_card: "Online tracking <small>Personalized routine + Weekly follow-up</small>",
     five_card: "Home session <small>Work out at your building's gym</small>",
 
+    contact_title: "Contact",
+    send_email: "Send",
+    your_name: "Your name",
+    your_email: "Your email",
+    your_message: "Your message",
+    send_whatsapp: "Contact via WhatsApp",
   }
 };
 
 function changeLanguage(lang) {
+
+  // Traducción de texto normal
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
     if (translations[lang][key]) el.innerHTML = translations[lang][key];
   });
 
+  // Traducción de placeholders
+  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+    const key = el.getAttribute("data-i18n-placeholder");
+    if (translations[lang][key]) el.placeholder = translations[lang][key];
+  });
+
   localStorage.setItem("lang", lang);
 }
+
 
 // Mantener idioma guardado
 document.addEventListener("DOMContentLoaded", () => {

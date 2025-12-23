@@ -264,7 +264,7 @@
         </div>
 
         <div class="price-row">
-          <span class="label"  data-i18n="five_card"></span>
+          <span class="label" data-i18n="five_card"></span>
           <span class="amount">$80</span>
         </div>
       </div>
@@ -275,39 +275,35 @@
 
   <!-- CONTACT -->
   <section class="section contact has-bg-image" id="contact" style="background-color: #ffffff;" aria-label="contact">
+    <div class="about-contact">
+      <h2 class="h2 section-title" data-i18n="contact_title"> </h2>
+    </div>
 
-    <div class="container">
+    <div class="container contact-box">
 
-      <h2 class="h2 section-title text-center">Contact</h2>
+      <!-- FORMULARIO -->
+      <div class="contact-left">
+        <form action="mailto:tucorreo@ejemplo.com" method="post" enctype="text/plain">
+          <input type="text" name="name" required data-i18n-placeholder="your_name">
+          <input type="email" name="email" required data-i18n-placeholder="your_email">
+          <textarea name="message" required data-i18n-placeholder="your_message"></textarea>
+          <button type="submit">
+            <span data-i18n="send_email"></span>
+          </button>
+        </form>
+      </div>
 
-      <div class="pricing-container">
-
-        <!-- Contacto Gmail -->
-        <div class="pricing-card">
-          <div class="card-header">
-            <h3 class="card-title">Email</h3>
-            <span class="price">Gmail</span>
+      <!-- WHATSAPP -->
+      <div class="contact-right">
+        <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-btn">
+          <div class="whatsapp-icon">
+            <svg width="55" height="55" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.671.149-.198.297-.769.967-.941 1.166-.173.198-.347.223-.644.074-.347-.149-1.466-.54-2.79-1.72-1.031-.92-1.726-2.057-1.924-2.404-.198-.347-.021-.534.128-.683.132-.131.297-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.372-.025-.521-.074-.149-.671-1.611-.919-2.206-.242-.579-.487-.5-.671-.51-.173-.009-.372-.011-.571-.011-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479s1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.237-.374a9.86 9.86 0 0 1-1.514-5.276c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.9 6.994c-.003 5.45-4.438 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c-.001 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 0 0 5.709 1.456h.005c6.554 0 11.889-5.335 11.892-11.892a11.82 11.82 0 0 0-3.468-8.466Z" />
+            </svg>
           </div>
-          <div class="card-body">
-            Envíame un correo y coordinamos tu plan de entrenamiento.
-            <span class="badge">Respuesta rápida</span>
-          </div>
-          <a href="mailto:tucorreo@gmail.com" class="btn">Enviar Email</a>
-        </div>
-
-        <!-- Contacto WhatsApp -->
-        <div class="pricing-card">
-          <div class="card-header">
-            <h3 class="card-title">WhatsApp</h3>
-            <span class="price">Chat</span>
-          </div>
-          <div class="card-body">
-            Escríbeme directamente por WhatsApp para más información.
-            <span class="badge">Atención directa</span>
-          </div>
-          <a href="https://wa.me/1234567890" target="_blank" class="btn">Enviar WhatsApp</a>
-        </div>
-
+          <p data-i18n="send_whatsapp"><span></span></p>
+        </a>
       </div>
 
     </div>
