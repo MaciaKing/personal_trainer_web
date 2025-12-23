@@ -57,73 +57,69 @@ const translations = {
   es: {
     hero_subtitle: "Fuerza, ganancia muscular y pérdida de grasa con un entrenamiento adaptado a ti.",
     hero_title: "Entrenamiento personal. Resultados reales.",
-    section_text: "Más fuerza. Más salud. Más confianza. Entrena conmigo y logra tu mejor versión con un programa diseñado para ti.",
-    cta_btn: "Empieza Hoy",
 
-    nav_home: "Home",
+    // nav_home: "Home",
     nav_about: "Sobre mí",
-    nav_plans: "Planes",
-    nav_blog: "Blog",
+    nav_prices: "Precios",
     nav_contact: "Contacto",
+    nav_review: "Review",
 
-    prices_title: "Mis Precios",
-    train_with_me: "Entrena conmigo",
+    // prices_title: "Mis Precios",
+    // train_with_me: "Entrena conmigo",
 
-    plan1_title: "1 SESIÓN",
-    plan1_desc: "Entrenamiento 1 a 1 totalmente personalizado.",
-    plan1_badge: "Gym o exterior",
+    // plan1_title: "1 SESIÓN",
+    // plan1_desc: "Entrenamiento 1 a 1 totalmente personalizado.",
+    // plan1_badge: "Gym o exterior",
 
-    plan2_title: "2 SESIONES / SEMANA",
-    plan2_desc: "Ideal para progreso constante.",
-    plan2_badge: "Pago quincenal",
+    // plan2_title: "2 SESIONES / SEMANA",
+    // plan2_desc: "Ideal para progreso constante.",
+    // plan2_badge: "Pago quincenal",
 
-    plan3_title: "3 SESIONES / SEMANA",
-    plan3_desc: "Transformación total.",
-    plan3_badge: "Plan recomendado",
+    // plan3_title: "3 SESIONES / SEMANA",
+    // plan3_desc: "Transformación total.",
+    // plan3_badge: "Plan recomendado",
 
-    online_title: "ONLINE COACHING",
-    online_desc: "Plan personalizado + seguimiento semanal",
-    online_badge: "Entrena desde cualquier lugar",
+    // online_title: "ONLINE COACHING",
+    // online_desc: "Plan personalizado + seguimiento semanal",
+    // online_badge: "Entrena desde cualquier lugar",
 
-    home_title: "ENTRENAMIENTO EN CASA",
-    home_desc: "Entrenamiento en tu edificio o domicilio.",
-    home_badge: "Comodidad total"
+    // home_title: "ENTRENAMIENTO EN CASA",
+    // home_desc: "Entrenamiento en tu edificio o domicilio.",
+    // home_badge: "Comodidad total"
   },
 
   en: {
     hero_subtitle: "Strength, muscle and fat loss through personalized training adapted to you.",
     hero_title: "Personal training. Real Results.",
     section_text: "More strength. More health. More confidence. Train with me and become your best self with a program designed just for you.",
-    cta_btn: "Start Today",
-
-    nav_home: "Home",
-    nav_about: "About Me",
-    nav_plans: "Plans",
-    nav_blog: "Blog",
+    
+    nav_about: "About me",
+    nav_prices: "Prices",
     nav_contact: "Contact",
+    nav_review: "Reviews",
 
-    prices_title: "My Prices",
-    train_with_me: "Train With Me",
+    // prices_title: "My Prices",
+    // train_with_me: "Train With Me",
 
-    plan1_title: "1 SESSION",
-    plan1_desc: "Fully personalized 1-on-1 training.",
-    plan1_badge: "Gym or outdoor",
+    // plan1_title: "1 SESSION",
+    // plan1_desc: "Fully personalized 1-on-1 training.",
+    // plan1_badge: "Gym or outdoor",
 
-    plan2_title: "2 SESSIONS / WEEK",
-    plan2_desc: "Perfect for steady progress.",
-    plan2_badge: "Bi-weekly payment",
+    // plan2_title: "2 SESSIONS / WEEK",
+    // plan2_desc: "Perfect for steady progress.",
+    // plan2_badge: "Bi-weekly payment",
 
-    plan3_title: "3 SESSIONS / WEEK",
-    plan3_desc: "Total body transformation.",
-    plan3_badge: "Recommended plan",
+    // plan3_title: "3 SESSIONS / WEEK",
+    // plan3_desc: "Total body transformation.",
+    // plan3_badge: "Recommended plan",
 
-    online_title: "ONLINE COACHING",
-    online_desc: "Custom plan + weekly follow-up",
-    online_badge: "Train from anywhere",
+    // online_title: "ONLINE COACHING",
+    // online_desc: "Custom plan + weekly follow-up",
+    // online_badge: "Train from anywhere",
 
-    home_title: "AT HOME SESSION",
-    home_desc: "Training at your building or home.",
-    home_badge: "Total convenience"
+    // home_title: "AT HOME SESSION",
+    // home_desc: "Training at your building or home.",
+    // home_badge: "Total convenience"
   }
 };
 
