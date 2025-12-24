@@ -65,9 +65,8 @@
 
           <li><a href="#about" class="navbar-link" data-i18n="nav_about" data-nav-link></a></li>
           <li><a href="#prices" class="navbar-link" data-i18n="nav_prices" data-nav-link></a></li>
-          <li><a href="#contact" class="navbar-link" data-i18n="nav_contact" data-nav-link></a></li>
           <li><a href="#reviews" class="navbar-link" data-i18n="nav_review" data-nav-link></a></li>
-
+          <li><a href="#contact" class="navbar-link" data-i18n="nav_contact" data-nav-link></a></li>
           <!-- LANG FLAGS -->
           <li class="lang-item">
             <img src="./assets/images/es.png" alt="ES" onclick="changeLanguage('es')">
@@ -271,12 +270,21 @@
     </div>
   </section>
 
+  <!-- REVIEWS -->
+  <section class="section review" id="reviews" aria-label="reviews">
+    <div class="container">
+      <h2 class="h1 section-title text-center" data-i18n="nav_review" style="color: black;"></h2>
+      <div class="sk-ww-google-reviews" data-embed-id="25636614"></div>
+      <script src="https://widgets.sociablekit.com/google-reviews/widget.js" defer></script>
+    </div>
+  </section>
 
 
   <!-- CONTACT -->
-  <section class="section contact has-bg-image" id="contact" style="background-color: #ffffff;" aria-label="contact">
+  <section class="section contact bg-dark has-bg-image" id="contact"
+    style="background-image: url('./assets/images/classes-bg.png')" aria-label="contact">
     <div class="about-contact">
-      <h2 class="h2 section-title" data-i18n="contact_title"> </h2>
+      <h2 class="h2 section-title" data-i18n="contact_title" style="color: white;"> </h2>
     </div>
 
     <div class="container contact-box">
@@ -308,65 +316,6 @@
 
     </div>
   </section>
-
-
-  <!-- REVIEWS -->
-  <section class="section review bg-dark has-bg-image" id="reviews"
-    style="background-image: url('./assets/images/classes-bg.png')" aria-label="reviews">
-
-    <div class="container">
-
-      <h2 class="h1 section-title text-center">Reviews</h2>
-
-
-
-      <div class="reviews-slider">
-
-        <div class="review-card">
-          <p class="review-text">
-            “Entrenar con Colete cambió totalmente mi energía y confianza. En 3 meses estoy más fuerte que nunca.”
-          </p>
-          <div class="review-user">
-            <span class="name">Carlos M.</span>
-            <span class="rating">★★★★★</span>
-          </div>
-        </div>
-
-        <div class="review-card">
-          <p class="review-text">
-            “Plan claro, motivación constante y resultados reales. No solo perdí peso, gané disciplina.”
-          </p>
-          <div class="review-user">
-            <span class="name">Laura R.</span>
-            <span class="rating">★★★★★</span>
-          </div>
-        </div>
-
-        <div class="review-card">
-          <p class="review-text">
-            “Nunca había tenido un entrenador tan dedicado. Cada sesión vale la pena.”
-          </p>
-          <div class="review-user">
-            <span class="name">Martín P.</span>
-            <span class="rating">★★★★★</span>
-          </div>
-        </div>
-
-        <div class="review-card">
-          <p class="review-text">
-            “Entrenamiento exigente pero humano. Colete sabe exactamente cómo llevarte al siguiente nivel.”
-          </p>
-          <div class="review-user">
-            <span class="name">Ana G.</span>
-            <span class="rating">★★★★★</span>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
 
   <script>
     const slider = document.querySelector(".reviews-slider");
@@ -405,10 +354,10 @@
       </div>
 
       <ul class="footer-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#class">Prices</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#about" class="navbar-link" data-i18n="nav_about" data-nav-link></a></li>
+        <li><a href="#prices" class="navbar-link" data-i18n="nav_prices" data-nav-link></a></li>
+        <li><a href="#reviews" class="navbar-link" data-i18n="nav_review" data-nav-link></a></li>
+        <li><a href="#contact" class="navbar-link" data-i18n="nav_contact" data-nav-link></a></li>
       </ul>
 
       <address class="footer-contact">

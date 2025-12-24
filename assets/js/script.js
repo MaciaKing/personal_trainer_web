@@ -61,7 +61,7 @@ const translations = {
     nav_about: "Sobre mí",
     nav_prices: "Precios",
     nav_contact: "Contacto",
-    nav_review: "Review",
+    nav_review: "Reseñas",
 
     about_me_title: "Sobre mí",
     about_me_subtitle: "Mi Historia",

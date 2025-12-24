@@ -2463,3 +2463,31 @@ body {
 .footer .copyright {
   margin-top: 2rem;
 }
+
+/* Texto dentro de inputs y textarea */
+#contact input,
+#contact textarea {
+  color: #ffffff !important;
+  background: transparent;        /* opcional */
+  border: 1px solid #ffffff !important; /* opcional */
+}
+
+/* Placeholders blancos */
+#contact input::placeholder,
+#contact textarea::placeholder {
+  color: #ffffff !important;
+  opacity: 1;
+}
+
+/* Si usas data-i18n-placeholder (traducciones), fuerza también */
+#contact input,
+#contact textarea {
+  caret-color: #ffffff; /* cursor blanco */
+}
+
+#reviews,
+#contact {
+  margin-top: -40px;   /* súbelo más o menos según necesites */
+  padding-top: 40px;   /* opcional para mantener algo de respiración */
+}
+
