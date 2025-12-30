@@ -2507,3 +2507,27 @@ body {
   object-fit: contain;
 }
 
+.hero-title {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #fff;
+  text-align: center;
+  line-height: 1.1;
+}
+
+/* Pequeño toque de glow suave estilo logo */
+.hero-title {
+  text-shadow: 0 0 10px rgba(255,255,255,0.15);
+}
+
+.section-title {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.span {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+}
