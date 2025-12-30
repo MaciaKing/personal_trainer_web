@@ -116,22 +116,33 @@ const translations = {
 };
 
 function changeLanguage(lang) {
-
-  // Traducción de texto normal
+  // Traducción texto
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
     if (translations[lang][key]) el.innerHTML = translations[lang][key];
   });
 
-  // Traducción de placeholders
+  // Traducción placeholders
   document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
     const key = el.getAttribute("data-i18n-placeholder");
     if (translations[lang][key]) el.placeholder = translations[lang][key];
   });
 
+  updateImages(lang);
+
   localStorage.setItem("lang", lang);
 }
 
+
+
+function updateImages(lang) {
+  document.querySelectorAll(".price-img").forEach(img => {
+    const es = img.getAttribute("data-img-es");
+    const en = img.getAttribute("data-img-en");
+
+    img.src = (lang === "es") ? es : en;
+  });
+}
 
 // Mantener idioma guardado
 document.addEventListener("DOMContentLoaded", () => {
