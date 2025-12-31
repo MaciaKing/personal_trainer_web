@@ -37,7 +37,11 @@
   <link rel="preload" as="image" href="./assets/images/calories.svg">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </head>
 
 <body id="top">
@@ -234,26 +238,45 @@
 
 
   <!-- PRICES -->
-  <section class="section class bg-dark has-bg-image with-colete" id="prices"
-     aria-label="class">
+  <section class="section class bg-dark has-bg-image with-colete" id="prices" aria-label="class">
 
     <div class="container">
-      <p class="section-subtitle" data-i18n="train_title"></p>
-      <div class="prices-images">
-        <img class="price-img" data-img-es="./assets/images/1_SINGLE_SESSION_WEB_ES.jpg"
-          data-img-en="./assets/images/1_SINGLE_SESSION_WEB.jpg" alt="Single session">
+      <p class="section-subtitle" data-i18n="train_title"></p><br>
+      <div class="swiper myPricesSwiper">
+        <div class="swiper-wrapper">
 
-        <img class="price-img" data-img-es="./assets/images/2_BIWEEKLY_2_SESSIONS_WEB_ES.jpg"
-          data-img-en="./assets/images/2_BIWEEKLY_2_SESSIONS_WEB.jpg" alt="Biweekly 2 sessions">
+          <div class="swiper-slide">
+            <img class="price-img" data-img-es="./assets/images/1_SINGLE_SESSION_WEB_ES.jpg"
+              data-img-en="./assets/images/1_SINGLE_SESSION_WEB.jpg" alt="Single session">
+          </div>
 
-        <img class="price-img" data-img-es="./assets/images/3_BIWEEKLY_3_SESSIONS_WEB_ES.jpg"
-          data-img-en="./assets/images/3_BIWEEKLY_3_SESSIONS_WEB.jpg" alt="Biweekly 3 sessions">
+          <div class="swiper-slide">
+            <img class="price-img" data-img-es="./assets/images/2_BIWEEKLY_2_SESSIONS_WEB_ES.jpg"
+              data-img-en="./assets/images/2_BIWEEKLY_2_SESSIONS_WEB.jpg" alt="Biweekly 2 sessions">
+          </div>
 
-        <img class="price-img" data-img-es="./assets/images/4_IN_HOME_WEB_ES.jpg"
-          data-img-en="./assets/images/4_IN_HOME_WEB.jpg" alt="In home coaching">
+          <div class="swiper-slide">
+            <img class="price-img" data-img-es="./assets/images/3_BIWEEKLY_3_SESSIONS_WEB_ES.jpg"
+              data-img-en="./assets/images/3_BIWEEKLY_3_SESSIONS_WEB.jpg" alt="Biweekly 3 sessions">
+          </div>
 
-        <img class="price-img" data-img-es="./assets/images/5_ONLINE_COACHING_WEB_ES.jpg"
-          data-img-en="./assets/images/5_ONLINE_COACHING_WEB.jpg" alt="Online coaching">
+          <div class="swiper-slide">
+            <img class="price-img" data-img-es="./assets/images/4_IN_HOME_WEB_ES.jpg"
+              data-img-en="./assets/images/4_IN_HOME_WEB.jpg" alt="In home coaching">
+          </div>
+
+          <div class="swiper-slide">
+            <img class="price-img" data-img-es="./assets/images/5_ONLINE_COACHING_WEB_ES.jpg"
+              data-img-en="./assets/images/5_ONLINE_COACHING_WEB.jpg" alt="Online coaching">
+          </div>
+
+        </div>
+
+        <!-- Controles -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
       </div>
 
       <h2 class="h2 section-title text-center" data-i18n="train_subtitle"></h2>

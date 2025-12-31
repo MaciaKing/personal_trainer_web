@@ -87,7 +87,7 @@ const translations = {
     hero_subtitle: "Strength, muscle and fat loss through personalized training adapted to you.",
     hero_title: "Personal training. Real Results.",
     section_text: "More strength. More health. More confidence. Train with me and become your best self with a program designed just for you.",
-    
+
     nav_about: "About me",
     nav_prices: "Prices",
     nav_contact: "Contact",
@@ -160,3 +160,22 @@ window.addEventListener("scroll", function () {
     logo.src = "./assets/images/colete-logo-blanco.png"; // blanco
   }
 });
+
+var swiper = new Swiper(".myPricesSwiper", {
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false
+  },
+  speed: 800,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  grabCursor: true
+});
+
