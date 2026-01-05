@@ -1,6 +1,17 @@
 'use strict';
 
 
+/* AL CARGAR */
+document.addEventListener("DOMContentLoaded", updateLogo);
+
+/* AL HACER SCROLL */
+window.addEventListener("scroll", () => {
+  updateLogo();
+});
+
+/* OPCIONAL: si giran el móvil */
+window.addEventListener("resize", updateLogo);
+
 
 /**
  * add event on element
@@ -154,18 +165,18 @@ document.addEventListener("DOMContentLoaded", () => {
 //const header = document.querySelector("[data-header]");
 const logo = document.getElementById("logo");
 
-window.addEventListener("scroll", () => {
+function updateLogo() {
   const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
   if (isMobile) {
-    logo.src = "./assets/images/colete-logo.png";
+    logo.src = "./assets/images/colete-logo.png"; // negra
     return;
   }
 
   logo.src = header.classList.contains("active")
     ? "./assets/images/colete-logo.png"
     : "./assets/images/colete-logo-blanco.png";
-});
+}
 
 
 var swiper = new Swiper(".myPricesSwiper", {
