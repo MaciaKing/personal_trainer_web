@@ -2537,4 +2537,10 @@ h1 {
   body {
     overflow-x: hidden;
   }
+
+  .span {
+    font-size: 2.0rem;
+    line-height: 1.1;
+    letter-spacing: 0.3px;
+  }
 }
