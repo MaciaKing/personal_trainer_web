@@ -695,65 +695,6 @@ body {
 }
 
 
-
-
-
-/*-----------------------------------*\
-  #VIDEO
-\*-----------------------------------*/
-/* 
-.video {
-  padding-block: 0;
-  margin-block-end: -250px;
-}
-
-.video-card {
-  background-color: var(--light-gray);
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-  border-radius: var(--radius-10);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.video-card::before {
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: var(--rich-black-fogra-29_50);
-  z-index: -1;
-}
-
-.video-card .card-title {
-  color: var(--white);
-  font-size: var(--fs-3);
-}
-
-.play-btn {
-  background-color: var(--coquelicot);
-  color: var(--white);
-  width: max-content;
-  font-size: 30px;
-  padding: 25px;
-  border-radius: 50%;
-  margin-block: 25px 35px;
-  animation: pulse 2s ease infinite;
-}
-
-@keyframes pulse {
-  0% { box-shadow: 0 0 0 0 var(--coquelicot); }
-  100% { box-shadow: 0 0 0 40px transparent; }
-} */
-
-
-
-
-
 /*-----------------------------------*\
   #CLASS
 \*-----------------------------------*/
@@ -2366,7 +2307,7 @@ body {
 }
 
 .contact-left input,
-.contact-left textarea{
+.contact-left textarea {
   width: 100%;
   padding: 10px;
   border-radius: 5px;
@@ -2376,7 +2317,7 @@ body {
   resize: none;
 }
 
-.contact-left textarea{
+.contact-left textarea {
   min-height: 120px;
 }
 
@@ -2389,7 +2330,7 @@ body {
 }
 
 /* Que formulario y whatsapp ocupen la mitad */
-.contact-left, 
+.contact-left,
 .contact-right {
   width: 50%;
 }
@@ -2421,8 +2362,10 @@ body {
 .footer-contact .contact-row {
   display: flex;
   gap: 1.5rem;
-  flex-wrap: wrap;         /* Permite que baje a otra línea si no cabe */
-  justify-content: center; /* Centrado */
+  flex-wrap: wrap;
+  /* Permite que baje a otra línea si no cabe */
+  justify-content: center;
+  /* Centrado */
   align-items: center;
   text-align: center;
 }
@@ -2451,7 +2394,8 @@ body {
 
 /* Menos distancia entre los footer-links y la sección de contacto */
 .footer-links {
-  margin-bottom: 0.5rem;  /* antes quizá era más grande */
+  margin-bottom: 0.5rem;
+  /* antes quizá era más grande */
 }
 
 /* Más distancia debajo del contacto y antes del copyright */
@@ -2468,8 +2412,10 @@ body {
 #contact input,
 #contact textarea {
   color: #ffffff !important;
-  background: transparent;        /* opcional */
-  border: 1px solid #ffffff !important; /* opcional */
+  background: transparent;
+  /* opcional */
+  border: 1px solid #ffffff !important;
+  /* opcional */
 }
 
 /* Placeholders blancos */
@@ -2482,13 +2428,16 @@ body {
 /* Si usas data-i18n-placeholder (traducciones), fuerza también */
 #contact input,
 #contact textarea {
-  caret-color: #ffffff; /* cursor blanco */
+  caret-color: #ffffff;
+  /* cursor blanco */
 }
 
 #reviews,
 #contact {
-  margin-top: -40px;   /* súbelo más o menos según necesites */
-  padding-top: 40px;   /* opcional para mantener algo de respiración */
+  margin-top: -40px;
+  /* súbelo más o menos según necesites */
+  padding-top: 40px;
+  /* opcional para mantener algo de respiración */
 }
 
 .prices-images {
@@ -2518,7 +2467,7 @@ body {
 
 /* Pequeño toque de glow suave estilo logo */
 .hero-title {
-  text-shadow: 0 0 10px rgba(255,255,255,0.15);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
 }
 
 .section-title {
@@ -2540,10 +2489,52 @@ body {
 
 .myPricesSwiper img {
   width: 100%;
-  max-width: 350px;   /* antes 450px */
+  max-width: 350px;
+  /* antes 450px */
   height: auto;
   margin: 10 auto;
   border-radius: 8px;
   object-fit: contain;
   display: block;
+}
+
+h1 {
+  display: inline;
+}
+
+/* =========================
+   SOLO MÓVIL
+========================= */
+@media (max-width: 768px) {
+
+  /* ===== FIX BOTÓN CERRAR NAV ===== */
+  .nav-close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    margin: 0;
+    padding: 8px;
+    z-index: 1001;
+  }
+
+  .back-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    /* por encima de todo */
+  }
+
+  .back-top-btn ion-icon {
+    pointer-events: none;
+  }
+
+  .back-top-btn ion-icon {
+    pointer-events: none;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
 }

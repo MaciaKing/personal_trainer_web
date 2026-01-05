@@ -56,7 +56,7 @@ window.addEventListener("scroll", function () {
 const translations = {
   es: {
     hero_subtitle: "Fuerza, ganancia muscular y pérdida de grasa con un entrenamiento adaptado a ti.",
-    hero_title: "Entrenamiento personal. Resultados reales.",
+    hero_title: "APRENDE A ENTRENAR.",
 
     nav_about: "Sobre mí",
     nav_prices: "Precios",
@@ -85,7 +85,7 @@ const translations = {
 
   en: {
     hero_subtitle: "Strength, muscle and fat loss through personalized training adapted to you.",
-    hero_title: "Personal training. Real Results.",
+    hero_title: "LEARN TO TRAIN.",
     section_text: "More strength. More health. More confidence. Train with me and become your best self with a program designed just for you.",
 
     nav_about: "About me",
@@ -151,15 +151,22 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-window.addEventListener("scroll", function () {
-  const logo = document.getElementById("logo");
+//const header = document.querySelector("[data-header]");
+const logo = document.getElementById("logo");
 
-  if (window.scrollY > 50) {
-    logo.src = "./assets/images/colete-logo.png"; // negro
-  } else {
-    logo.src = "./assets/images/colete-logo-blanco.png"; // blanco
+window.addEventListener("scroll", () => {
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+  if (isMobile) {
+    logo.src = "./assets/images/colete-logo.png";
+    return;
   }
+
+  logo.src = header.classList.contains("active")
+    ? "./assets/images/colete-logo.png"
+    : "./assets/images/colete-logo-blanco.png";
 });
+
 
 var swiper = new Swiper(".myPricesSwiper", {
   loop: true,
