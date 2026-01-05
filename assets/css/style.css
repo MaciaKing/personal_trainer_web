@@ -2502,6 +2502,7 @@ h1 {
   display: inline;
 }
 
+
 /* =========================
    SOLO MÓVIL
 ========================= */
@@ -2547,4 +2548,22 @@ h1 {
   body {
     padding-top: 50px;
   }
+
+    .navbar-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Contenedor de los idiomas */
+  .lang-item {
+    display: flex;
+    justify-content: center;
+    margin: 8px 0;
+  }
+
+  .lang-item img {
+    width: 32px; /* ajusta si quieres */
+    cursor: pointer;
+  }
+
 }
