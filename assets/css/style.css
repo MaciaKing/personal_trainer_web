@@ -2543,4 +2543,8 @@ h1 {
     line-height: 1.1;
     letter-spacing: 0.3px;
   }
+
+  body {
+    padding-top: 50px;
+  }
 }
