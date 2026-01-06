@@ -2566,4 +2566,9 @@ h1 {
     cursor: pointer;
   }
 
+  .price-row {
+    width: 100%;
+    max-width: none;
+  }
+
 }
